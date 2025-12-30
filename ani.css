@@ -1,0 +1,114 @@
+/* SECTION */
+.flow-section {
+  padding: 160px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.flow-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 900px;
+}
+
+/* CIRCLES */
+.flow-circle {
+  position: absolute;
+  top: 0;
+  width: 260px;
+  height: 260px;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.flow-circle .circle {
+  width: 100%;
+  height: 100%;
+  background: #0b3aa9;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* TEXT */
+.circle h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.circle p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* POSITIONS */
+.flow-circle.left {
+  left: -300px;
+}
+
+.flow-circle.right {
+  right: -300px;
+}
+
+/* FINAL CENTER POSITIONS */
+.flow-circle.show[data-step="1"] {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.flow-circle.show[data-step="2"] {
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.flow-circle.show[data-step="3"] {
+  top: 440px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.flow-circle.show[data-step="4"] {
+  top: 660px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+/* CONNECTING LINE */
+.flow-line {
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  width: 4px;
+  height: 0;
+  background: #dbeafe;
+  transform: translateX(-50%);
+  transition: height 1s ease;
+}
+
+.flow-line.active {
+  height: 700px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .flow-container {
+    height: 1100px;
+  }
+
+  .flow-circle {
+    width: 220px;
+    height: 220px;
+  }
+}
