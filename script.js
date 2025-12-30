@@ -18,3 +18,4 @@ const mobileMenu = document.getElementById("mobileMenu");
 closeMenu.addEventListener("click", () => {
   mobileMenu.style.display = "none";
 });
+
