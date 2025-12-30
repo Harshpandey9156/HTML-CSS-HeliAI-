@@ -3,8 +3,7 @@ const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");
 const mobileMenu = document.getElementById("mobileMenu");
 
-/* SCROLL EFFECT */
-window.addEventListener("scroll", () => {
+ window.addEventListener("scroll", () => {
   if (window.scrollY > 20) {
     navbar.classList.add("scrolled");
   } else {
@@ -12,8 +11,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/* MOBILE MENU */
-openMenu.addEventListener("click", () => {
+ openMenu.addEventListener("click", () => {
   mobileMenu.style.display = "flex";
 });
 

@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* NAVBAR */
+/* navbar */
 header {
   position: fixed;
   top: 0;
@@ -43,7 +43,7 @@ header.scrolled {
   opacity: 0.7;
 }
 
-/* NAV LINKS */
+/* nav link */
 .nav-links {
   display: flex;
   gap: 32px;
@@ -84,7 +84,7 @@ header.scrolled {
   cursor: pointer;
 }
 
-/* MOBILE MENU */
+/* MOBILE  */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -135,7 +135,7 @@ header.scrolled {
   overflow: hidden;
 }
 
-/* VIDEO */
+/* video */
 .hero-video {
   position: absolute;
   inset: 0;
@@ -146,7 +146,7 @@ header.scrolled {
   transform: scale(1.05);
 }
 
-/* OVERLAY */
+/* overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -160,7 +160,7 @@ header.scrolled {
   z-index: 1;
 }
 
-/* CONTENT */
+/* content */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -185,7 +185,7 @@ header.scrolled {
   max-width: 650px;
 }
 
-/* BUTTONS */
+/* button */
 .hero-buttons {
   margin-top: 40px;
   display: flex;
@@ -260,7 +260,7 @@ header.scrolled {
   padding: 0 32px;
 }
 
-/* HEADER */
+/* header */
 .page2-header {
   text-align: center;
   margin-bottom: 130px;
@@ -282,7 +282,7 @@ header.scrolled {
   gap: 44px;
 }
 
-/* CARD */
+/* card */
 .page2-card {
   background: #ffffff;
   padding: 44px;
@@ -303,7 +303,7 @@ header.scrolled {
   line-height: 1.8;
 }
 
-/* ICON */
+/* icon */
 .icon {
   width: 56px;
   height: 56px;
@@ -328,7 +328,7 @@ header.scrolled {
   background: #f4c430;
 }
 
-/* RESPONSIVE */
+/* responsive */
 @media (max-width: 1024px) {
   .page2-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -348,10 +348,8 @@ header.scrolled {
     font-size: 20px;
   }
 }
-/* ===================== */
-/* DARK FEATURE SECTION */
-/* ===================== */
-.feature-dark {
+ /* DARK FEATURE SECTION */
+ .feature-dark {
   background: linear-gradient(90deg, #000, #3b0764, #000);
   color: white;
   padding: 100px 0;
@@ -411,9 +409,8 @@ header.scrolled {
   line-height: 1.8;
 }
 
-/* ===================== */
-/* WHY CHOOSE US */
-/* ===================== */
+ /* WHY CHOOSE US */
+ 
 .why-section {
   padding: 100px 0;
 }
@@ -476,7 +473,7 @@ header.scrolled {
   margin-top: 8px;
 }
 
-/* RESPONSIVE */
+/* responsive for mobile */
 @media (max-width: 1024px) {
   .feature-grid,
   .why-container {
@@ -526,7 +523,7 @@ header.scrolled {
   max-width: 360px;
 }
 
-/* COLUMNS */
+/* column */
 .footer-col h3 {
   font-size: 16px;
   font-weight: 600;
@@ -555,7 +552,7 @@ header.scrolled {
   opacity: 0.85;
 }
 
-/* BOTTOM BAR */
+/* bottom  */
 .footer-bottom {
   max-width: 1300px;
   margin: 70px auto 0;
@@ -571,7 +568,7 @@ header.scrolled {
   opacity: 0.8;
 }
 
-/* SOCIAL ICONS */
+/* icons */
 .social-icons {
   display: flex;
   gap: 16px;
@@ -589,7 +586,7 @@ header.scrolled {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* responsive */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
