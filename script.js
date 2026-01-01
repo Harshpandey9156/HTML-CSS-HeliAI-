@@ -59,7 +59,36 @@ whyItems.forEach(item => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector("#page2");
+  const blobs = container?.querySelectorAll(".blob");
 
+  if (!container || !blobs.length) return;
+
+  container.addEventListener("mousemove", (e) => {
+    const rect = container.getBoundingClientRect();
+
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    gsap.to(blobs, {
+      x,
+      y,
+      stagger: 0.12,
+      duration: 1,
+      ease: "power3.out"
+    });
+  });
+
+  container.addEventListener("mouseleave", () => {
+    gsap.to(blobs, {
+      x: 0,
+      y: 0,
+      duration: 1.2,
+      ease: "power4.out"
+    });
+  });
+});
 
 
 
